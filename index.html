@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipHacksHTML</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        e {
+            color: red;
+            text-decoration: none;
+        }
+
+        e:hover {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: auto;
+            background-color: black;
+            padding: 10px;
+            display: flex;
+        }
+
+        .footer a {
+            margin: 0 10px;
+        }
+
+        /* Dodajemy nowy styl dla informacji na lewej stronie */
+        .info {
+            text-align: left;
+            padding: 10px;
+            font-size: 14px;
+            color: red; /* Zmieniamy kolor tekstu na czerwony */
+        }
+
+        /* Dodajemy żółty tekst */
+        .yellow-text {
+            color: yellow;
+        }
+		
+		.fraza {
+            color: cyan;
+        }
+		
+		.przykład {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dodajemy informację na lewej stronie -->
+    <div class="info">
+        Nie Odpowiadamy za problemy które sobie wyrządzisz. Ta strona HTML powstała tylko w celach edukacyjnych.
+    </div>
+	
+	<div class="fraza" style="white-space: pre-wrap; position: absolute; left: 25px; top: 50px;">
+    Jednym z powodów, dla których odnieśliśmy sukces z Flipper Zero jest to,
+że w dzisiejszych czasach każdy chce być hakerem,ale nie każdy wie, jak się nim stać.
+Chcieliśmy pokazać, że hakerstwo jest do codziennego użytku i że nie jest czymś złym,
+tylko umiejętnością, jak wszystko inne.
+</div>
+
+<div class="przykład" style="white-space: pre-wrap; position: absolute; left: 60px; top: 150px;">
+Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępstw.
+    Z drugiej strony to samo można powiedzieć o nożu kuchennym. 
+</div>
+
+    <!-- Dodajemy żółty tekst z datą -->
+    <div class="yellow-text" id="currentDate"></div>
+
+    <h1>Uniwersalne Skrypty do BAD-USB/RubberDucky</h1>
+    <h2>Flipper Zero</h2>
+	
+	 <div class="footer">
+        <a href="adres_twojego_pliku.zip" target="_blank">Pack1 - Download</a>
+        <e href="#"></e>
+        <e href="#"></e>
+    </div>
+    
+    <!-- Dodajemy obraz GIF po prawej stronie -->
+    <img src="hacker-pupper-dog.gif" alt="Hacker Pupper Dog" style="float: right; margin-right: -600px; margin-top: 20px;">
+
+    <script>
+        // Pobieramy aktualną datę
+        var currentDate = new Date();
+
+        // Formatujemy datę do postaci dd.mm.rrrr
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth() + 1; // Dodajemy 1, ponieważ miesiące są numerowane od 0
+        var year = currentDate.getFullYear();
+
+        // Dodajemy zero przed dniem i miesiącem, jeśli są mniejsze niż 10
+        if (day < 10) {
+            day = "0" + day;
+        }
+        if (month < 10) {
+            month = "0" + month;
+        }
+
+        // Tworzymy pełny tekst daty
+        var formattedDate = day + "." + month + "." + year;
+
+        // Wstawiamy datę do elementu o id "currentDate"
+        document.getElementById("currentDate").textContent = formattedDate;
+    </script>
+</body>
+</html>
