@@ -28,17 +28,26 @@
             color: purple;
             text-decoration: none;
         }
+		
+		a:hover {
+            text-decoration: underline;
+        }
 
-        e {
+        b {
             color: red;
             text-decoration: none;
         }
 
-        e:hover {
+        b:hover {
             text-decoration: underline;
+        }	
+		
+		u {
+            color: cyan;
+            text-decoration: none;
         }
-
-        a:hover {
+		
+		u:hover {
             text-decoration: underline;
         }
 
@@ -46,12 +55,14 @@
             margin-top: auto;
             background-color: black;
             padding: 10px;
-            display: flex;
+            display: block;
         }
 
-        .footer a {
-            margin: 0 10px;
-        }
+        .footer a,
+    .footer b, .footer u{
+        display: block;
+        margin-bottom: 10px; /* Możesz dostosować odstęp między przyciskami */
+    }
 
         /* Dodajemy nowy styl dla informacji na lewej stronie */
         .info {
@@ -100,13 +111,16 @@ Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępst
     <h2>Flipper Zero</h2>
 	
 	 <div class="footer">
-        <a href="adres_twojego_pliku.zip" target="_blank">Pack1 - Download</a>
-        <e href="#"></e>
-        <e href="#"></e>
-    </div>
+    <b href="adres_twojego_pliku.zip" target="_blank">Pack1 - Not Upload</b><br>
+    <b href="adres_twojego_pliku.zip" target="_blank">Pack2 - Not Upload</b><br>
+    <b href="adres_twojego_pliku.zip" target="_blank">Pack3 - Not Upload</b><br>
+	<a href="https://github.com/" target="_blank" style="color: cyan;">info</a><br>
+
+</div>
+
     
     <!-- Dodajemy obraz GIF po prawej stronie -->
-    <img src="hacker-pupper-dog.gif" alt="Hacker Pupper Dog" style="float: right; margin-right: -600px; margin-top: 20px;">
+    <img src="hacker-pupper-dog.gif" alt="Hacker Pupper Dog" style="float: right; margin-right: -600px; margin-top: -150px;">
 
     <script>
         // Pobieramy aktualną datę
