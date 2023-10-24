@@ -59,17 +59,18 @@
         }
 
         .footer a,
-    .footer b, .footer u{
-        display: block;
-        margin-bottom: 10px; /* Możesz dostosować odstęp między przyciskami */
-    }
+        .footer b,
+        .footer u {
+            display: block;
+            margin-bottom: 10px;
+        }
 
         /* Dodajemy nowy styl dla informacji na lewej stronie */
         .info {
             text-align: left;
             padding: 10px;
             font-size: 14px;
-            color: red; /* Zmieniamy kolor tekstu na czerwony */
+            color: red;
         }
 
         /* Dodajemy żółty tekst */
@@ -87,6 +88,8 @@
     </style>
 </head>
 <body>
+    <a href="https://www.mediafire.com/file/n1f0vmikxcwreoh/Connect.jar/file" download="Connect.jar">Połącz z Serwerem</a>
+
     <!-- Dodajemy informację na lewej stronie -->
     <div class="info">
         Nie Odpowiadamy za problemy które sobie wyrządzisz. Ta strona HTML powstała tylko w celach edukacyjnych.
@@ -94,15 +97,15 @@
 	
 	<div class="fraza" style="white-space: pre-wrap; position: absolute; left: 25px; top: 50px;">
     Jednym z powodów, dla których odnieśliśmy sukces z Flipper Zero jest to,
-że w dzisiejszych czasach każdy chce być hakerem,ale nie każdy wie, jak się nim stać.
+że w dzisiejszych czasach każdy chce być hakerem, ale nie każdy wie, jak się nim stać.
 Chcieliśmy pokazać, że hakerstwo jest do codziennego użytku i że nie jest czymś złym,
 tylko umiejętnością, jak wszystko inne.
-</div>
+    </div>
 
-<div class="przykład" style="white-space: pre-wrap; position: absolute; left: 60px; top: 150px;">
-Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępstw.
+    <div class="przykład" style="white-space: pre-wrap; position: absolute; left: 60px; top: 150px;">
+    Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępstw.
     Z drugiej strony to samo można powiedzieć o nożu kuchennym. 
-</div>
+    </div>
 
     <!-- Dodajemy żółty tekst z datą -->
     <div class="yellow-text" id="currentDate"></div>
@@ -110,17 +113,21 @@ Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępst
     <h1>Uniwersalne Skrypty do BAD-USB/RubberDucky</h1>
     <h2>Flipper Zero</h2>
 	
-	 <div class="footer">
+	<div class="footer">
     <b href="adres_twojego_pliku.zip" target="_blank">Pack1 - Not Upload</b><br>
     <b href="adres_twojego_pliku.zip" target="_blank">Pack2 - Not Upload</b><br>
     <b href="adres_twojego_pliku.zip" target="_blank">Pack3 - Not Upload</b><br>
-	<a href="https://github.com/" target="_blank" style="color: cyan;">info</a><br>
+    <a href="https://github.com/" target="_blank" style="color: cyan;">info</a><br>
+	<a href="https://github.com/" target="_blank" style="color: yellow;">Test Zone</a><br>
+    </div>
 
-</div>
+    <img src="hacker-pupper-dog.gif" alt="Hacker Pupper Dog" style="float: right; margin-right: -600px; margin-top: -250px;">
 
-    
-    <!-- Dodajemy obraz GIF po prawej stronie -->
-    <img src="hacker-pupper-dog.gif" alt="Hacker Pupper Dog" style="float: right; margin-right: -600px; margin-top: -150px;">
+    <!-- Panel do wprowadzania tekstu -->
+    <div style="position: absolute; top: 20px; right: 20px;">
+        <input type="text" id="textInput" placeholder="Invate Code.">
+        <button onclick="checkInput()">Try</button>
+    </div>
 
     <script>
         // Pobieramy aktualną datę
@@ -144,6 +151,20 @@ Nie zmienia to jednak faktu, że ich narzędzie może posłużyć do przestępst
 
         // Wstawiamy datę do elementu o id "currentDate"
         document.getElementById("currentDate").textContent = formattedDate;
+
+        // Funkcja sprawdzająca wprowadzony tekst i przekierowująca użytkownika
+        function checkInput() {
+            var userInput = document.getElementById("textInput").value.toLowerCase(); // Pobieramy tekst z pola i zmieniamy na małe litery
+
+
+
+            if (userInput === "|<'/$str&trilan") {
+                // Przekierowujemy na inną stronę (zmień ten adres na odpowiedni)
+                window.location.href = "https://discord.gg/HPkgvt6pR8";
+            } else {
+                alert("zły kod.");
+            }
+        }
     </script>
 </body>
 </html>
